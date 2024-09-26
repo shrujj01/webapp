@@ -1,12 +1,9 @@
 //Health check route used to fetch the details from sequelize object and check the request
-
-
-
 const express = require('express');
 const router = express.Router();
 const { sequelize } = require('../models');
 
-// Middleware to allow only GET requests
+//Middleware to allow only GET requests
 //Error handling for any other request other than GET
 router.all('/', (req, res, next) => {
   if (req.method !== 'GET') {
