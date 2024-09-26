@@ -1,7 +1,3 @@
-//Health check route used to fetch the details from sequelize object and check the request
-//Error handling for any other request other than GET
-//Error handling for Database connection fail 503
-
 const express = require('express');
 const router = express.Router();
 const { sequelize } = require('../models');
