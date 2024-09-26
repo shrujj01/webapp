@@ -1,6 +1,3 @@
-//This is the entry point of the application.
-//Contains all the routes to which the redirection is made
-
 const express = require('express');
 const app = express();
 require('dotenv').config();
